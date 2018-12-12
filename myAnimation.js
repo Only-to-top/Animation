@@ -1,21 +1,13 @@
-//animations
+//Animate CSS + WayPoints javaScript Plugin
+//Example: $(".element").animated("zoomInUp");
 (function($) {
-	$.fn.animated = function(inEffect) {
-		$(this).each(function() {
-			var ths = $(this);
-			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
-				if (dir === "down") {
-					ths.addClass(inEffect).css("opacity", "1");
-				};
-			}, {
-				offset: "80%"
-			});
-		});
-	};
+  $.fn.animated = function(inEffect) {
+    $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
+      if (dir === "down") {
+          $(this).addClass(inEffect).css("opacity", "1");
+      };
+    }, {
+      offset: "90%"
+    });
+  };
 })(jQuery);
-
-$(document).ready(function() {
-	
-	$("section h1").animated("jello", "zoomOutDown");
-
-})
