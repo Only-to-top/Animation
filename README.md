@@ -7,11 +7,12 @@ ____________________________
 add jquery.waypoints.js
 
 # use waypoints :
-
+```js
 var waypoints = $('.circle.one').waypoint(function(direction) {
   // code
 }, {
   offset: '120%'
 })
+```
 
 off. site:     https://github.com/imakewebthings/waypoints
