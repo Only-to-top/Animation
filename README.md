@@ -13,3 +13,5 @@ var waypoints = $('.circle.one').waypoint(function(direction) {
 }, {
   offset: '120%'
 })
+
+off. site:     https://github.com/imakewebthings/waypoints
